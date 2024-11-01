@@ -3,10 +3,12 @@ import DropdownList from "./components/DropdownlList";
 import Footer from "./components/Footer";
 
 import Features from "./components/Features";
+import FacebookPixel from './components/FacebookPixel';
 
 function App() {
   return (
     <div className="App">
+      <FacebookPixel />
       <head>
         <title>Receitas para papais e mamães de pet</title>
       </head>
