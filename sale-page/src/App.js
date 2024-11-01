@@ -2,7 +2,7 @@ import "./styles.css";
 import DropdownList from "./components/DropdownlList";
 import Footer from "./components/Footer";
 
-import Features from "./components/Features"
+import Features from "./components/Features";
 
 function App() {
   return (
@@ -14,56 +14,73 @@ function App() {
       <header>
         <h1>
           Receitas que milhares de papais e mamães de pet estão utilizando para
-         <span className="highlight">VARIAR A ALIMENTAÇÃO</span>de seu cãozinho de forma <span className="highlight">FÁCIL</span> e com <span className="highlight">INGREDIENTES BARATOS</span>
+          <span className="highlight">VARIAR A ALIMENTAÇÃO</span>de seu cãozinho
+          de forma <span className="highlight">FÁCIL</span> e com{" "}
+          <span className="highlight">INGREDIENTES BARATOS</span>
         </h1>
       </header>
 
-      <div className="book-covers">
-        <img src="https://i.ibb.co/d5Qhx3b/dog-Cover1.jpg" alt="30 Receitas Saudáveis e Caseiras" />
+      <div className="books-container">
+        <img
+          src="https://i.ibb.co/d5Qhx3b/dog-Cover1.jpg"
+          alt="30 Receitas Saudáveis e Caseiras"
+          className="book"
+        />
+
         <div className="icon-container">
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="40" height="40"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      className="plus-icon"
-    >
-      <line x1="12" y1="5" x2="12" y2="19" />
-      <line x1="5" y1="12" x2="19" y2="12" />
-      </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="40"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className="plus-icon"
+          >
+            <line x1="12" y1="5" x2="12" y2="19" />
+            <line x1="5" y1="12" x2="19" y2="12" />
+          </svg>
+        </div>
+
+        <img
+          src="https://i.ibb.co/7pMdzjY/dog-Cover2.jpg"
+          alt="Alimentação Saudável - Bônus"
+          className="book"
+        />
       </div>
-        <img src="https://i.ibb.co/7pMdzjY/dog-Cover2.jpg" alt="Alimentação Saudável - Bônus" />
-      </div>
 
-      <a href="https://pay.kiwify.com.br/Y4Cuat4?afid=2ehm21Wa" target="_blank" rel="noopener noreferrer">
-        <button>SIM! EU QUERO EBOOK DE RECEITAS POR R$19,90</button>
-      </a>
+      <section className="features-container">
+        <a
+          href="https://pay.kiwify.com.br/Y4Cuat4?afid=2ehm21Wa"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button>SIM! EU QUERO EBOOK DE RECEITAS POR R$19,90</button>
+        </a>
 
-      <Features />
-
-      <ul className="features-list">
-        <li>30 receitas caseiras fáceis</li>
-        <li>Modo de preparo completo</li>
-        <li>Receitas Nutritivas</li>
-        <li>Receitas de bolo para pet</li>
-        <li>Ingredientes baratos</li>
-        <li>Varie a alimentação do seu pet</li>
-      </ul>
-      <h2 className="bonus">BÔNUS</h2>
-      <ul className="features-list">
-        <li>Lista de alimentos proibidos
-        </li>
-        <li>Receitas para cães obesos</li>
-        <li>Receitas para cães idosos</li>
-        <li>Receitas para cães com alergias atópicas</li>
-        <li>Frutas ideais para seu pet</li>
-        <li>Dicas nutricionais de alimentação</li>
-        <li>Receitas de petiscos saudáveis</li>
-      </ul>
+        <Features />
+        <ul className="features-list">
+          <li>30 receitas caseiras fáceis</li>
+          <li>Modo de preparo completo</li>
+          <li>Receitas Nutritivas</li>
+          <li>Receitas de bolo para pet</li>
+          <li>Ingredientes baratos</li>
+          <li>Varie a alimentação do seu pet</li>
+        </ul>
+        <h2 className="bonus">BÔNUS</h2>
+        <ul className="features-list">
+          <li>Lista de alimentos proibidos</li>
+          <li>Receitas para cães obesos</li>
+          <li>Receitas para cães idosos</li>
+          <li>Receitas para cães com alergias atópicas</li>
+          <li>Frutas ideais para seu pet</li>
+          <li>Dicas nutricionais de alimentação</li>
+          <li>Receitas de petiscos saudáveis</li>
+        </ul>
+      </section>
 
       {/* Testimonials Section */}
       <section className="testimonials">
@@ -74,14 +91,19 @@ function App() {
         </div>
         <h2>Leve o Bônus Gratuitamente</h2>
 
-        <a href="https://pay.kiwify.com.br/Y4Cuat4?afid=2ehm21Wa" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://pay.kiwify.com.br/Y4Cuat4?afid=2ehm21Wa"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <button className="cta-button">
             SIM! EU QUERO EBOOK DE RECEITAS POR R$19,90
           </button>
         </a>
 
         <h3>
-          VEJA OS <span className="highlight">DEPOIMENTOS DE QUEM JÁ COMPROU</span>
+          VEJA OS{" "}
+          <span className="highlight">DEPOIMENTOS DE QUEM JÁ COMPROU</span>
         </h3>
 
         <div className="testimonial-cards">
@@ -146,43 +168,47 @@ function App() {
         </h2>
 
         <div className="books-container">
-  <img
-    src="https://i.ibb.co/d5Qhx3b/dog-Cover1.jpg"
-    alt="30 Receitas Saudáveis e Caseiras"
-    className="book"
-  />
-  
-  <div className="icon-container">
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="40" height="40"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      className="plus-icon"
-    >
-      <line x1="12" y1="5" x2="12" y2="19" />
-      <line x1="5" y1="12" x2="19" y2="12" />
-    </svg>
-  </div>
+          <img
+            src="https://i.ibb.co/d5Qhx3b/dog-Cover1.jpg"
+            alt="30 Receitas Saudáveis e Caseiras"
+            className="book"
+          />
 
-  <img
-    src="https://i.ibb.co/7pMdzjY/dog-Cover2.jpg"
-    alt="Alimentação Saudável - Bônus"
-    className="book"
-  />
-</div>
+          <div className="icon-container">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="plus-icon"
+            >
+              <line x1="12" y1="5" x2="12" y2="19" />
+              <line x1="5" y1="12" x2="19" y2="12" />
+            </svg>
+          </div>
 
+          <img
+            src="https://i.ibb.co/7pMdzjY/dog-Cover2.jpg"
+            alt="Alimentação Saudável - Bônus"
+            className="book"
+          />
+        </div>
 
         <div className="price">
           <div className="old-price">De R$59,90 por apenas</div>
           R$19,90
         </div>
 
-        <a href="https://pay.kiwify.com.br/Y4Cuat4?afid=2ehm21Wa" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://pay.kiwify.com.br/Y4Cuat4?afid=2ehm21Wa"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <button className="cta-button">
             SIM! EU QUERO EBOOK DE RECEITAS POR R$19,90
           </button>
@@ -200,7 +226,11 @@ function App() {
         <div className="badge">
           <div className="badge-circle">
             <div className="badge-content">
-                <img src="https://apaixonadosporshihtzu.com/wp-content/uploads/2023/04/7dias-1.png.webp" alt="Badge" className="badge-image"></img>
+              <img
+                src="https://apaixonadosporshihtzu.com/wp-content/uploads/2023/04/7dias-1.png.webp"
+                alt="Badge"
+                className="badge-image"
+              ></img>
             </div>
           </div>
         </div>

@@ -33,27 +33,6 @@ header {
     text-align: center;
 }
 
-.book-covers {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin: 30px auto;
-    padding: 0 20px;
-    max-width: 800px;
-    animation: fromBottom .7s backwards;
-}
-
-.book-covers img {
-    width: 200px; 
-    border-radius: 10px;
-    transition: transform .3s;
-}
-
-.book-covers img:hover {
-    transform: scale(1.05);
-}
-
 button, .cta-button, .ctf-button {
     display: block;
     background-color: #00d665;
@@ -119,7 +98,6 @@ button:hover, .cta-button:hover, .ctf-button:hover {
   }
   
   
-  
 .features-list li {
     margin-bottom: 10px;
     padding-left: 20px;
@@ -174,12 +152,19 @@ main {
     }
 }
 
+.features-container, .guarantee-container {
+  padding: 10px 10px;
+  margin-top: 40px;
+  color: rgb(0, 0, 0);
+}
+
 .testimonials {
     padding: 40px 20px;
     text-align: center;
     margin-top: 40px;
     color: white;
 }
+
 
 .divider {
     display: flex;
@@ -459,7 +444,7 @@ main {
     color: #000000;
     margin: 20px 0;
     text-align: left;
-    padding: 0 20px;
+    padding: 5px 20px;
     background: #ffffff;
     border: 1px solid;
     border-radius: 10px;
@@ -558,20 +543,11 @@ main {
         font-size: 90%;
     }
 
-    .book-covers {
-        padding: 0 10px;
-        gap: 15px;
-    }
-
-    .book-covers img {
-        width: 150px; 
-    }
-
     .features,
-    .books-container,
     .trust-badges,
     .testimonial-cards,
     .footer-container {
+      
         flex-direction: column;
         align-items: center;
         gap: 20px;
@@ -595,6 +571,11 @@ main {
         padding: 10px 20px;
     }
 
+    .books-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
     .promo-section,
     .features,
     .faq-container {
