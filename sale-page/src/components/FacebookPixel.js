@@ -23,6 +23,7 @@ const FacebookPixel = () => {
     // Initialize the Facebook Pixel
     window.fbq('init', '567918892420888');
     window.fbq('track', 'PageView');
+    window.fbq('track', 'ViewContent');
 
     // Clean up function to remove the script on unmount
     return () => {
@@ -36,7 +37,7 @@ const FacebookPixel = () => {
   return (
     <noscript>
       <img height="1" width="1" style={{ display: 'none' }}
-           src={`https://www.facebook.com/tr?id={your-pixel-id-goes-here}&ev=PageView&noscript=1`} />
+           src={`https://www.facebook.com/tr?id=567918892420888&ev=PageView&noscript=1`} />
     </noscript>
   );
 };
